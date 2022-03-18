@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <script type="text/javascript">
+       function logout()
+           {
+               alert("You logged out");
+           }
+        
+
+           function changeColor(color){
+               document.bgColor=color;
+            }
+        function change()
+        { 
+        var new_width = document.getElementById("newwidth").value;
+        var new_height = document.getElementById("newheight").value;
+        document.my_image.width = new_width;
+        document.my_image.height = new_height;  
+        }
+      </script> 
+
+    
+
+    <!--custom styling-->
+<!--    <link rel="stylesheet"  href="master%20(1).css">-->
+    <link rel="stylesheet" type="text/css" href="contact%20usAdmin.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>La Vie</span> Clinic</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="Home%20(1).html">Home</a></li>
+            <li><a href="AboutUs.html">Our Doctors</a></li>
+            <li><a href="Appoinment.html">Appoiments</a></li>
+            <li><a href="Login.html">Log in</a></li>
+            <li><a href="Home%20(1).html" onclick="logout();">Log out</a></li>
+        </ul>
+    </header>
+    <img src="Just-White-Dental-About-5.jpg" name="my_image" >
+    <br>
+    width <input type="text" id="newwidth" />
+    height <input type="text" id="newheight" />
+    <input type="button" value=" change size " onclick="change()"/>
+
+     <div >
+                  <input  class="btn1" type="button" value="    " onclick="changeColor('#004d99')"/>
+                  <input  class="btn2" type="button" value="    " onclick="changeColor('#ffff00')"/>
+                  <input  class="btn3" type="button" value="    " onclick="changeColor('#cc00cc')"/>
+                  <input  class="btn4" type="button" value="    " onclick="changeColor('#ff6666')"/>
+                  <input  class="btn5" type="button" value="    " onclick="changeColor('lightgray')"/>
+                </div>
+        <h2>Contact Us</h2>
+    <section>
+        <details open> 
+        <summary >Call Us</summary>
+           <p>
+            <br><a href="tel:+022471493">123-456-789</a><br>
+            <br><a href="tel:+201020343414">01020343414</a><br><br>
+            or send us an E-mail: <a href="mailto:yasminfadel56@gmail.com">info@lavie.com</a><br><br> 
+           </p>
+            <ul TYPE="square">
+            <li>Our working hours 11am – 10pm </li>
+            <li>Sunday is our off</li>
+            <li>Please get an Appointment before visiting</li>
+            </ul>
+               
+        </details>
+        <details>
+         <summary>Our Address</summary>
+         <p>2 El Sheikh Ali Mahmoud St. Parallel To Hegaz St.
+Landmark: Beside Nasr Soprting Club
+El Mahkama Square, Heliopolis, Cairo<br><br>
+
+Description of the address
+From gesr el suez road :
+front of shabrawy resturant you can find a way direct to our clinic just drive in straight way till you find garden our clinic is now on your left beside pharmacy called (el refaay)<br><br>
+
+From Heliopolis :
+We are midway between Heliopolis square and mahkama square , when you are heading from Heliopolis to mahkama you will find along your way on the right (raya ,on the run , tikka , NSGB , tedata ) beside tedata a way to get in just some meters you will find the clinic in the front of you besides pharmacy called ( el –refaay )</p>
+        </details>
+    </section>  
+
+       <!-- footer-->
+    <div class="footer">
+        <div class="footer-content"> 
+    
+            <div class="footer-section about"> <h1 class="logo-text"><span> La Vie</span> Clinic </h1>
+                <div>
+                    We are one of the most advanced dental clinics in Egypt providing Advanced, Affordable, and Pain-free Dental Treatment.
+                    
+Our team is highly qualified, updated with the latest technologies and different treatment options available
+           
+                </div>
+                <div class="contact">
+                    <p> contact us on:</p>
+                    
+                    <span><i class="fas fa-phone"> </i> &nbsp; 123-456-789 </span>
+                    <span><i class="fas fa-envelope"> </i> &nbsp; info@lavie.com</span>
+         
+                </div>
+
+        </div>
+   </div>
+    
+
+        <div class="footer-bottom">
+         &copy; 2020 La Vie Clinic website &nbsp; Designed by CodeZilla team
+        </div>
+    </div>
+    </body>
+</html>

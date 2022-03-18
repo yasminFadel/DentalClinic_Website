@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function confirmation()
+           {
+               if(document.appoint.reading.value=="")
+            {
+                alert("Please select your appointment");
+            }
+               else
+               {
+               alert("Appointment taken successfully");
+               window.location.href="Home%20(1).html"
+                }
+            }
+               function logout()
+           {
+               alert("You logged out");
+           }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--coustom styling-->
+    <link rel="stylesheet" href="Css%20appointments.css">
+
+        
+<title>Appointments</title>
+
+</head>
+
+    <body>
+            <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>La Vie</span> Clinic</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="Home%20(1).html">Home</a></li>
+            <li><a href="about%20us.html">Our Doctors</a> </li>
+            <li><a href="Contact%20Us.html">Contact us</a></li>
+            <li><a href="#">Appointments</a></li>
+             <li><a href="Login.html">Log in</a></li>
+            <li><a href="#" onclick="logout();">Log out</a></li>
+    
+        </ul>
+        </header>
+
+
+<div class="content-area">
+    <div class="wrapper">
+<h2> Take Appointment </h2>
+        
+<form name="appoint">        
+<p>
+<TABLE>
+   <TR>
+      <TH COLSPAN="2">
+         <H3>Doctor Ahmed Abouzeid <span> BDs, MSc, ISP, DGOI</span></H3>
+      </TH>
+   </TR>
+<tr>
+<th> Day </th>
+<th> Time</th>
+</tr>
+<tr>
+<th> Sunday </th>
+<th> <input type="radio" name="reading" value=0/> 9:30 AM <br/> </th>
+</tr>
+<tr>
+<th> Monday </th>
+<th> <input type="radio" name="reading" value=0/> 12:00 PM <br/> </th>
+</tr>
+<tr>
+<th> Thursday </th>
+<th> <input type="radio" name="reading" value=0/> 6:20 PM <br/> </th>
+</tr>
+   </TABLE>
+    
+   <TABLE>
+   <TR>
+      <TH COLSPAN="2">
+          <H3>Doctor Ezzat Youssef<span> Owner of La vie clinic</span></H3>
+      </TH>
+   </TR>
+   <tr>
+<th> Day </th>
+<th> Time</th>
+</tr>
+<tr>
+<th> Monday </th>
+<th> <input type="radio" name="reading" value=0/> 11:00 AM <br/> </th>
+</tr>
+<tr>
+<th> Tuesday </th>
+<th> <input type="radio" name="reading" value=0/> 12:30 PM <br/> </th>
+</tr>
+<tr>
+<th> Wednesday </th>
+<th> <input type="radio" name="reading" value=0/> 2:00 PM <br/> </th>
+</tr>
+   </TABLE>
+       
+   <TABLE>
+   <TR>
+      <TH COLSPAN="2">
+         <H3>Doctor Tarek Hosny  <span>Prothesis and Implantology</span></H3>
+      </TH>
+   </TR>
+   <tr>
+<th> Day </th>
+<th> Time</th>
+</tr>
+<tr>
+<th> Saturday </th>
+<th> <input type="radio" name="reading" value=0/> 11:45 AM <br/> </th>
+</tr>
+<tr>
+<th> Monday </th>
+<th> <input type="radio" name="reading" value=0/> 4:00 PM <br/> </th>
+</tr>
+   </TABLE>
+</p>
+     <input type="button" class="button" value="Confirm" onclick="confirmation();"/>
+ </form>
+     <!-- footer-->
+    <div class="footer">
+        <div class="footer-content"> 
+    
+            <div class="footer-section about"> <h1 class="logo-text"><span> La Vie</span> Clinic </h1>
+                <div>
+                    We are one of the most advanced dental clinics in Egypt providing Advanced, Affordable, and Pain-free Dental Treatment.
+                    
+Our team is highly qualified, updated with the latest technologies and different treatment options available
+           
+                </div>
+                <div class="contact">
+                    <p> contact us on:</p>
+                    
+                    <span><i class="fas fa-phone"> </i> &nbsp; 123-456-789 </span>
+                    <span><i class="fas fa-envelope"> </i> &nbsp; info@lavie.com</span>
+         
+                </div>
+        </div>
+   </div>
+    
+
+        <div class="footer-bottom">
+         &copy; 2020 La Vie Clinic website &nbsp; Designed by CodeZilla team
+        </div>
+    </div>
+    
+    </div>
+        </div>
+</body>
+</html>

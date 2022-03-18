@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+            var Adminemails  = new Array("yasmine20191700833@gmail.com","info@lavie.com")
+            var Adminpasswords = new Array("20191700833","lavie2019")
+        function validation()
+        { 
+            if(document.inputform.email.value=="")
+            {
+                alert("Please write your E-mail");
+                document.inputform.email.focus();
+
+            }
+            else if(document.inputform.email.value.indexOf("@")==-1||document.inputform.email.value.indexOf(".")==-1)
+            {
+                alert("Please Enter valid email,e.g:info@gmail.com")
+                document.inputform.email.focus();
+            }
+            else if(document.inputform.password.value=="")
+            {
+                alert("Please write your Password");
+                document.inputform.password.focus();
+            }
+            else
+            {
+                    var admin=false;
+                    var rightpasword=true;
+                    for (var i=0;i<2;i++)
+                    { 
+                        if(document.inputform.email.value==Adminemails[i])
+                        {     
+                             var admin=true;
+                             if(document.inputform.password.value== Adminpasswords[i])
+                             {     
+                                alert("Welcome Back Admin")
+                                window.location.href="Contact%20UsAdmin.html"
+                             }
+                            else
+                            {
+                                rightpasword=false;
+                            }
+                    
+                        }
+                       
+                    }
+                    if(rightpasword==false && admin==true)
+                    {
+                         alert("Password is Wrong");
+                         document.inputform.password.focus();
+                         valid=false;
+                    }
+                    else if(admin==false)
+                    { 
+                        alert("Welcome Back")
+                        window.location.href="Home%20(1).html"
+                    }   
+            }
+         }
+        
+    </script>
+    <!--custom styling-->
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    
+    <title>Login page</title>
+</head>
+<body>
+
+<form name="inputform" >
+        <h1>Log in</h1>
+    <br>&nbsp;&emsp;Email:&ensp; <input type="text" name="email" placeholder="E-mail"><br>
+    <br> Password: <input type="password" name="password" placeholder="Password"><br>
+    <br><input type="button" class="button" value="Log in" onclick="validation()" />
+    <p class="message">Not registered? <a href="Registration.html">Create an account</a></p>
+</form>
+
+
+        <div>
+        <bold>&copy; 2020 La Vie Clinic website &nbsp; Designed by CodeZilla team</bold>
+        </div>
+</body>
